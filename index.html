@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img src="joaoluizDev.jpg" alt="João Luiz Photo" class="profile-pic" />
+    <img src="img/joaoluizDev.jpg" alt="João Luiz Photo" class="profile-pic" />
     <h1>João Luiz Domingues de Sá</h1>
     <p>Full Stack Developer | .NET & Azure Specialist | Clean Architecture Advocate</p>
   </header>
@@ -25,6 +25,7 @@
     </ul>
   </nav>
 
+  <main class="container">
   <section id="about" class="fade-in">
     <h2>About Me</h2>
     <p>I'm a Brazilian developer passionate about building scalable solutions, clean architecture, and delivering value through software. I'm currently working with .NET, SQL Server, JavaScript, and Azure.</p>
@@ -46,12 +47,351 @@
 
   <section id="projects" class="fade-in">
     <h2>Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+        <h3>TechChallengerPhase1</h3>
+        <p>Project developed for Phase 1 of a technical challenge, demonstrating problem-solving skills and practical application of software development knowledge.</p>
+        <div class="tags">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+            <span>Jupyter Notebook</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-tech1')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>LubyTechProject</h3>
+        <p>RESTful API developed as part of a technical challenge from Luby to control developers' time entries, focusing on clean architecture and best practices.</p>
+        <div class="tags">
+            <span>.NET Core</span>
+            <span>Entity Framework Core</span>
+            <span>SQL Server</span>
+            <span>Swagger</span>
+            <span>xUnit</span>
+            <span>Angular</span>
+            <span>React</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-luby')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>DockerKubernetesPersonal</h3>
+        <p>Personal project to practice deploying .NET applications in Docker containers with orchestration using Kubernetes, based on ASP.NET Core MVC.</p>
+        <div class="tags">
+            <span>ASP.NET Core MVC</span>
+            <span>Entity Framework Core</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>SQL Server</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-docker')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>SoftPlanProject</h3>
+        <p>Project developed as part of a technical challenge proposed by Softplan, focusing on RESTful APIs, clean architecture, and .NET development best practices.</p>
+        <div class="tags">
+            <span>ASP.NET Core 6</span>
+            <span>C#</span>
+            <span>Entity Framework Core</span>
+            <span>SQL Server</span>
+            <span>Swagger</span>
+            <span>xUnit</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-softplan')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>CriptoControl</h3>
+        <p>Personal project focused on tracking and analyzing cryptocurrency investments, with features to monitor performance, gains, and balance over time.</p>
+        <div class="tags">
+            <span>.NET Core</span>
+            <span>C#</span>
+            <span>Blazor</span>
+            <span>ASP.NET MVC</span>
+            <span>SQL Server</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-cripto')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>Parky</h3>
+        <p>Project focused on practicing RESTful API creation with ASP.NET Core, emphasizing authentication, authorization, clean architecture, and continuous integration.</p>
+        <div class="tags">
+            <span>ASP.NET Core Web API</span>
+            <span>Entity Framework Core</span>
+            <span>SQL Server</span>
+            <span>JWT</span>
+            <span>Swagger</span>
+            <span>Azure Pipelines</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-parky')">More</button>
+        </div>
+    </div>
+</div>
+  
+    
+    <!-- Modais -->
+
+    <div id="modal-tech1" class="custom-modal">
+        <span onclick="closeModal('modal-tech1')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+
+        <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">TechChallengerPhase1</h1> -->
+
+        <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase1" target="_blank">
+            <img src="img/tech_challenger_phase.png" alt="Preview TechChallengerPhase1" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;"/>
+        </a>
+
+        <div style="max-width: 800px; text-align: left;">
+            <h2 style="color: white;">🛠️ Technologies Used</h2>
+            <ul>
+            <li><strong>Python</strong> – Primary language for data analysis</li>
+            <li><strong>Pandas</strong> – Data manipulation and analysis</li>
+            <li><strong>NumPy</strong> – Efficient numerical operations</li>
+            <li><strong>Matplotlib and Seaborn</strong> – Data visualization</li>
+            <li><strong>Jupyter Notebook</strong> – Interactive development and presentation</li>
+            </ul>
+
+            <h2 style="color: white;">🏛️ Architecture</h2>
+            <ul>
+            <li><strong>analise.ipynb:</strong> Jupyter notebook with data loading, cleaning, visualization and interpretation</li>
+            <li><strong>seguros.csv:</strong> Raw data file containing clients and insurance charges</li>
+            <li><strong>gera_dados.py:</strong> Python script for generating or modifying data if needed</li>
+            </ul>
+
+            <h2 style="color: white;">⭐ Main Features</h2>
+            <ul>
+            <li>Reading and preprocessing health insurance data</li>
+            <li>Monthly charge calculation from annual values</li>
+            <li>Formatting monetary values to Brazilian standard</li>
+            <li>Sorting data to identify most and least expensive plans</li>
+            <li>Graphical visualizations to support data interpretation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-softplan" class="custom-modal">
+  <span onclick="closeModal('modal-softplan')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+
+  <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">SoftPlanProject</h1> -->
+
+  <a href="https://github.com/JoaoLuizDeveloper/SoftPlanProject" target="_blank">
+    <img src="img/soft_plan_project.png" alt="Preview SoftPlanProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+  </a>
+
+  <div style="max-width: 800px; text-align: left;">
+    <h2 style="color: white;">🛠️ Technologies Used</h2>
     <ul>
-      <li><strong>Customer Portal API</strong> – .NET Web API integrated with Azure and SQL Server to handle customer onboarding, porting and inventory management.</li>
-      <li><strong>Internal Reporting System</strong> – Generated advanced filtered reports using dynamic SQL and EF Core in a Function App integrated with SQL procedures.</li>
-      <li><strong>GitHub Pages Automation</strong> – Published internal documentation via GitHub Pages using CI/CD workflows.</li>
+      <li><strong>ASP.NET Core 6</strong> – Framework for API development</li>
+      <li><strong>C#</strong> – Programming language used</li>
+      <li><strong>Entity Framework Core</strong> – ORM for data access</li>
+      <li><strong>SQL Server</strong> – Relational database</li>
+      <li><strong>Swagger</strong> – Interactive API documentation</li>
+      <li><strong>xUnit</strong> – Unit testing framework</li>
     </ul>
-  </section>
+
+    <h2 style="color: white;">🏛️ Architecture</h2>
+    <ul>
+      <li><strong>Domain:</strong> Contains entities and interfaces representing business core</li>
+      <li><strong>Application:</strong> Implements business logic and use cases</li>
+      <li><strong>Infrastructure:</strong> Repository and data access implementations</li>
+      <li><strong>API:</strong> Presentation layer exposing application endpoints</li>
+    </ul>
+
+    <h2 style="color: white;">⭐ Main Features</h2>
+    <ul>
+      <li>CRUD operations using Entity Framework Core</li>
+      <li>Modular architecture with clear responsibility separation</li>
+      <li>API documentation using Swagger</li>
+      <li>Unit testing with xUnit</li>
+    </ul>
+  </div>
+</div>
+
+    <div id="modal-cripto" class="custom-modal">
+  <span onclick="closeModal('modal-cripto')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+
+  <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">CriptoControl</h1> -->
+
+  <a href="https://github.com/JoaoLuizDeveloper/CriptoControl" target="_blank">
+    <img src="img/cripto_control.png" alt="Preview CriptoControl" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+  </a>
+
+  <div style="max-width: 800px; text-align: left;">
+    <h2 style="color: white;">🛠️ Technologies Used</h2>
+    <ul>
+      <li><strong>.NET Core</strong> – Framework for application development</li>
+      <li><strong>C#</strong> – Programming language used</li>
+      <li><strong>Blazor or ASP.NET MVC</strong> – To be defined (TBD) for UI layer</li>
+      <li><strong>SQL Server</strong> – Relational database for data persistence</li>
+    </ul>
+
+    <h2 style="color: white;">🏛️ Architecture</h2>
+    <ul>
+      <li><strong>Controllers:</strong> Handle HTTP requests and coordinate business logic</li>
+      <li><strong>Extensions:</strong> Provide helper extension methods</li>
+      <li><strong>Properties:</strong> Stores config and project metadata</li>
+      <li>Uses <code>appsettings.json</code> and <code>appsettings.Development.json</code> for environment configs</li>
+    </ul>
+
+    <h2 style="color: white;">⭐ Main Features</h2>
+    <ul>
+      <li>Crypto portfolio tracking and total balance calculation</li>
+      <li>Real-time price fetching via public APIs</li>
+      <li>Performance charts over time</li>
+      <li>Historical price tracking</li>
+      <li>Multi-currency support</li>
+    </ul>
+  </div>
+</div>
+
+    <div id="modal-parky" class="custom-modal">
+  <span onclick="closeModal('modal-parky')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+
+  <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">Parky</h1> -->
+
+  <a href="https://github.com/JoaoLuizDeveloper/Parky" target="_blank">
+    <img src="img/parky.png" alt="Preview Parky" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+  </a>
+
+  <div style="max-width: 800px; text-align: left;">
+    <h2 style="color: white;">🛠️ Technologies Used</h2>
+    <ul>
+      <li><strong>ASP.NET Core Web API</strong> – Framework for API development</li>
+      <li><strong>Entity Framework Core</strong> – ORM for data access</li>
+      <li><strong>SQL Server</strong> – Relational database</li>
+      <li><strong>JWT (JSON Web Tokens)</strong> – Authentication and authorization</li>
+      <li><strong>Swagger</strong> – Interactive API documentation</li>
+      <li><strong>Azure Pipelines</strong> – Continuous Integration/Delivery (CI/CD)</li>
+    </ul>
+
+    <h2 style="color: white;">🏛️ Architecture</h2>
+    <ul>
+      <li><strong>Controllers:</strong> Handle HTTP requests and return appropriate responses</li>
+      <li><strong>Models:</strong> Define data structures used in the application</li>
+      <li><strong>Repositories:</strong> Data access logic using Repository pattern</li>
+      <li><strong>Data:</strong> Manages DB context and migrations</li>
+      <li>JWT-based authentication securing API routes</li>
+    </ul>
+
+    <h2 style="color: white;">⭐ Main Features</h2>
+    <ul>
+      <li>CRUD (Create, Read, Update, Delete) for national park resources</li>
+      <li>User authentication and authorization with JWT</li>
+      <li>Interactive API documentation using Swagger</li>
+      <li>CI/CD pipeline configured with Azure Pipelines</li>
+    </ul>
+  </div>
+</div>
+
+    <div id="modal-luby" class="custom-modal">
+  <span onclick="closeModal('modal-luby')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+
+  <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">LubyTechProject</h1> -->
+
+  <a href="https://github.com/JoaoLuizDeveloper/LubyTechProject" target="_blank">
+    <img src="img/luby_tech_project.png" alt="Preview LubyTechProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+  </a>
+
+  <div style="max-width: 800px; text-align: left;">
+        <h2 style="color: white;">🛠️ Technologies Used</h2>
+        <ul>
+        <li><strong>.NET Core 3.1 / .NET 5+</strong> – For building the API</li>
+        <li><strong>Entity Framework Core</strong> – For data access</li>
+        <li><strong>SQL Server</strong> – Relational database</li>
+        <li><strong>xUnit / Moq</strong> – For unit testing</li>
+        <li><strong>Angular and React</strong> – Frontends in development</li>
+        <li><strong>Swagger</strong> – API documentation and testing</li>
+        </ul>
+
+        <h2 style="color: white;">🏛️ Architecture</h2>
+        <ul>
+        <li><strong>LubyTechAPI:</strong> API layer</li>
+        <li><strong>LubyTechModel:</strong> Models and entities</li>
+        <li><strong>LubyTechTests:</strong> Unit tests</li>
+        <li><strong>LubyTechAngular and LubyTechReact:</strong> Distinct frontends</li>
+        <li><strong>Clean Architecture / DDD-Inspired:</strong> Responsibility separation, dependency injection, organized by domain</li>
+        </ul>
+
+        <h2 style="color: white;">⭐ Main Features</h2>
+        <ul>
+        <li>Developer registration and listing</li>
+        <li>Work hours logging</li>
+        <li>Total hours calculation per developer</li>
+        <li>Schedule conflict validation</li>
+        <li>API documented with Swagger</li>
+        <li>Automated tests for business logic coverage</li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+<div id="modal-docker" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%;
+    background-color:rgba(0,0,0,0.95); color:white; justify-content:center; align-items:center; flex-direction:column; padding: 30px; overflow-y: auto;">
+
+    <span onclick="document.getElementById('modal-docker').style.display='none'"
+        style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+
+    <a href="https://github.com/JoaoLuizDeveloper/DockerKubernetesPersonal" target="_blank">
+        <img src="img/docker_kubernetes.png" alt="Preview DockerKubernetesPersonal" style="max-width: 100%; margin-bottom: 20px; border-radius: 10px;" />
+    </a>
+
+    <div style="max-width: 800px; text-align: left;">
+        <h2 style="color: white;">🛠️ Technologies Used</h2>
+        <ul>
+            <li><strong>ASP.NET Core MVC</strong> – Framework for developing the web application</li>
+            <li><strong>Entity Framework Core</strong> – ORM for data access</li>
+            <li><strong>Docker</strong> – Application containerization</li>
+            <li><strong>Kubernetes</strong> – Container orchestration</li>
+            <li><strong>SQL Server</strong> – Relational database</li>
+        </ul>
+
+        <h2 style="color: white;">🏛️ Architecture</h2>
+        <ul>
+            <li><strong>Controllers:</strong> Handle HTTP requests</li>
+            <li><strong>Models:</strong> Define the application's model classes</li>
+            <li><strong>Views:</strong> Contain the user interface pages</li>
+            <li><strong>Data:</strong> Manages the database context</li>
+            <li><strong>Migrations:</strong> Stores Entity Framework migrations</li>
+            <li><strong>wwwroot:</strong> Contains static files like CSS, JS, and images</li>
+            <li><strong>Dockerfile:</strong> Instructions to build the application’s Docker image</li>
+            <li><strong>dockerkubernetes-deploy.yml:</strong> Manifest file for Kubernetes deployment</li>
+            <li><strong>dockerkubernetes-service.yml:</strong> Defines the Kubernetes service to expose the app</li>
+        </ul>
+
+        <h2 style="color: white;">⭐ Key Features</h2>
+        <ul>
+            <li>Fully functional web application with server-rendered pages</li>
+            <li>Integration with SQL Server database</li>
+            <li>Application containerization using Docker</li>
+            <li>Deployment and management in a Kubernetes cluster</li>
+        </ul>
+    </div>
+</div>
+
+
+</section>
 
   <section id="experience" class="fade-in">
     <h2>Experience</h2>
@@ -91,6 +431,7 @@
     <p>LinkedIn: <a href="https://linkedin.com/in/joaoluizdeveloper" target="_blank">linkedin.com/in/joaoluizdeveloper</a></p>
     <p>GitHub: <a href="https://github.com/joaoluizdeveloper" target="_blank">github.com/joaoluizdeveloper</a></p>
   </section>
+</main>
 
   <footer>
     <p>&copy; 2025 João Luiz. All rights reserved.</p>

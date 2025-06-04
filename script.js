@@ -33,3 +33,16 @@ window.addEventListener('scroll', () => {
 backToTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+function showModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.add("show");
+    modal.style.display = 'flex';
+}
+
+function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.remove("show");
+    setTimeout(() => modal.style.display = 'none', 400);
+  }
