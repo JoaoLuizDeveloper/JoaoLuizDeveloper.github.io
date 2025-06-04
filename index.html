@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>João Luiz – Portfolio</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -17,6 +20,17 @@
       color: white;
       padding: 2rem;
       text-align: center;
+      position: relative;
+    }
+    .profile-pic {
+      display: block;
+      margin: 0 auto 1rem;
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      border: 5px solid gray;
+      object-fit: cover;
+      background-color: #333;
     }
     nav ul {
       display: flex;
@@ -31,11 +45,21 @@
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1a1a1a;
     }
     section {
       max-width: 800px;
       margin: auto;
       padding: 2rem;
+    }
+    h2 {
+      color: #1a1a1a;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
@@ -47,14 +71,19 @@
 </head>
 <body>
   <header>
-    <h1>João Luiz</h1>
-    <p>Full Stack Developer · Problem Solver · Technology Enthusiast</p>
+    <img src="joaoluizDev.jpg" alt="João Luiz Photo" class="profile-pic" />
+    <h1>João Luiz Domingues de Sá</h1>
+    <p>Full Stack Developer | .NET & Azure Specialist | Clean Architecture Advocate</p>
   </header>
 
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#languages">Languages</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -66,6 +95,26 @@
       clean architecture, and delivering value through software. I'm currently
       working with .NET, SQL Server, JavaScript, and Azure.
     </p>
+    <p>
+      I’m a calm and collaborative person who views the colleagues as partners. I’m open to receive feedback and I often like to refactor my code if the time allows—even when it works—because I believe there is always space for improvements. I enjoy learning and constantly evolving. You’ll never hear me complain about doing something outside my usual routine; I see it as an opportunity to grow.
+    </p>
+    <p>
+      Currently, I work with Azure and .NET Core. Over my 6-year career as a developer, I’ve spent 5 of those years working remotely full-time. I’m well-adapted to this model and consistently meet deadlines. When I estimate the time for some task, I always deliver it. If an issue unexpected happen, I will use my personal time to ensure it doesn’t impact the company’s timeline.
+    </p>
+    <p>
+      I try to maintain clear communication with the team and I want the company to see me not only as a technical contributor but also as a teammate you can always count on. If for example is necessary a deploy outside the hour.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> C#, JavaScript, TypeScript, SQL</li>
+      <li><strong>Backend:</strong> .NET Core, ASP.NET, Entity Framework</li>
+      <li><strong>Frontend:</strong> Angular, React</li>
+      <li><strong>Cloud:</strong> Azure (Functions, Blob, Cosmos DB), AWS</li>
+      <li><strong>DevOps:</strong> Azure DevOps, Git, Docker, CI/CD</li>
+    </ul>
   </section>
 
   <section id="projects">
@@ -83,9 +132,45 @@
     </ul>
   </section>
 
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>PC Manutenção (Freelance)</strong> – IT Technician (April 2015 – November 2018)<br>
+        ● Maintenance and replacement of motherboards and electronic components<br>
+        ● Software installation and training on operating systems, Office packages, and various programs
+      </li>
+      <li><strong>Vamos para Cima (Internship)</strong> – Laravel Intern (April – July 2018)<br>
+        ● Assisted in developing an e-commerce platform using technologies such as Laravel, Git, PHP, Bootstrap, Vagrant, MySQL, Firebase, HTML5, JavaScript, jQuery, and CSS3
+      </li>
+      <li><strong>Datora Telecom</strong> (via Luby Software) – Full Stack Developer (2022 – Present)</li>
+      <li><strong>Luby Software</strong> – Full Stack Developer (2021 – Present)</li>
+      <li><strong>Super Teia</strong> – Full Stack Developer Jr (2021)</li>
+      <li><strong>AM4 TI</strong> – Full Stack Developer Jr (2019 – 2021)</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education & Certifications</h2>
+    <ul>
+      <li>BSc in Information Systems – Dom Bosco University</li>
+      <li>Microsoft Certified: Azure Developer Associate (AZ-204)</li>
+      <li>Microsoft Certified: Azure Fundamentals</li>
+      <li>AWS Certified Cloud Practitioner</li>
+    </ul>
+  </section>
+
+  <section id="languages">
+    <h2>Languages</h2>
+    <ul>
+      <li><strong>English:</strong> Intermediate (I can handle the interview in English)</li>
+      <li><strong>Spanish:</strong> Basic</li>
+      <li><strong>Portuguese:</strong> Native</li>
+    </ul>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: joaoluizdeveloper@example.com</p>
+    <p>Email: <a href="mailto:joaoluizdeveloper@gmail.com">joaoluizdeveloper@gmail.com</a></p>
     <p>Phone: +55 (24) 99832-9477</p>
     <p>LinkedIn: <a href="https://linkedin.com/in/joaoluizdeveloper" target="_blank">linkedin.com/in/joaoluizdeveloper</a></p>
     <p>GitHub: <a href="https://github.com/joaoluizdeveloper" target="_blank">github.com/joaoluizdeveloper</a></p>
