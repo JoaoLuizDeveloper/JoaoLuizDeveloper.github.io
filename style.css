@@ -1,0 +1,139 @@
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General site styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* Header section */
+header {
+  background: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Profile image style */
+.profile-pic {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  border: 5px solid gray;
+  object-fit: cover;
+  background-color: #333;
+}
+
+/* Navigation bar */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  background: #eee;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #1a1a1a;
+}
+
+/* Section spacing and layout */
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Section heading */
+h2 {
+  color: #1a1a1a;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+h2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade-in effect for sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: white;
+}
+
+/* Back-to-top button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 0.6rem 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+#backToTop:hover {
+  background: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

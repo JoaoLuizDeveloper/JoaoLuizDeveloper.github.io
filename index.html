@@ -4,70 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>João Luiz – Portfolio</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: #1a1a1a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      position: relative;
-    }
-    .profile-pic {
-      display: block;
-      margin: 0 auto 1rem;
-      width: 120px;
-      height: 120px;
-      border-radius: 8px;
-      border: 5px solid gray;
-      object-fit: cover;
-      background-color: #333;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      list-style: none;
-      padding: 1rem;
-      background: #eee;
-      margin: 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #1a1a1a;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h2 {
-      color: #1a1a1a;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1a1a1a;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -88,25 +25,15 @@
     </ul>
   </nav>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
-    <p>
-      I'm a Brazilian developer passionate about building scalable solutions,
-      clean architecture, and delivering value through software. I'm currently
-      working with .NET, SQL Server, JavaScript, and Azure.
-    </p>
-    <p>
-      I’m a calm and collaborative person who views the colleagues as partners. I’m open to receive feedback and I often like to refactor my code if the time allows—even when it works—because I believe there is always space for improvements. I enjoy learning and constantly evolving. You’ll never hear me complain about doing something outside my usual routine; I see it as an opportunity to grow.
-    </p>
-    <p>
-      Currently, I work with Azure and .NET Core. Over my 6-year career as a developer, I’ve spent 5 of those years working remotely full-time. I’m well-adapted to this model and consistently meet deadlines. When I estimate the time for some task, I always deliver it. If an issue unexpected happen, I will use my personal time to ensure it doesn’t impact the company’s timeline.
-    </p>
-    <p>
-      I try to maintain clear communication with the team and I want the company to see me not only as a technical contributor but also as a teammate you can always count on. If for example is necessary a deploy outside the hour.
-    </p>
+    <p>I'm a Brazilian developer passionate about building scalable solutions, clean architecture, and delivering value through software. I'm currently working with .NET, SQL Server, JavaScript, and Azure.</p>
+    <p>I’m a calm and collaborative person who views the colleagues as partners. I’m open to receive feedback and I often like to refactor my code if the time allows—even when it works—because I believe there is always space for improvements. I enjoy learning and constantly evolving. You’ll never hear me complain about doing something outside my usual routine; I see it as an opportunity to grow.</p>
+    <p>Currently, I work with Azure and .NET Core. Over my 6-year career as a developer, I’ve spent 5 of those years working remotely full-time. I’m well-adapted to this model and consistently meet deadlines. When I estimate the time for some task, I always deliver it. If an issue unexpected happen, I will use my personal time to ensure it doesn’t impact the company’s timeline.</p>
+    <p>I try to maintain clear communication with the team and I want the company to see me not only as a technical contributor but also as a teammate you can always count on. If for example is necessary a deploy outside the hour.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2>Skills</h2>
     <ul>
       <li><strong>Languages:</strong> C#, JavaScript, TypeScript, SQL</li>
@@ -117,31 +44,20 @@
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
     <ul>
-      <li>
-        <strong>Customer Portal API</strong> – .NET Web API integrated with Azure and SQL Server to handle customer onboarding, porting and inventory management.
-      </li>
-      <li>
-        <strong>Internal Reporting System</strong> – Generated advanced filtered reports using dynamic SQL and EF Core in a Function App integrated with SQL procedures.
-      </li>
-      <li>
-        <strong>GitHub Pages Automation</strong> – Published internal documentation via GitHub Pages using CI/CD workflows.
-      </li>
+      <li><strong>Customer Portal API</strong> – .NET Web API integrated with Azure and SQL Server to handle customer onboarding, porting and inventory management.</li>
+      <li><strong>Internal Reporting System</strong> – Generated advanced filtered reports using dynamic SQL and EF Core in a Function App integrated with SQL procedures.</li>
+      <li><strong>GitHub Pages Automation</strong> – Published internal documentation via GitHub Pages using CI/CD workflows.</li>
     </ul>
   </section>
 
-  <section id="experience">
+  <section id="experience" class="fade-in">
     <h2>Experience</h2>
     <ul>
-      <li><strong>PC Manutenção (Freelance)</strong> – IT Technician (April 2015 – November 2018)<br>
-        ● Maintenance and replacement of motherboards and electronic components<br>
-        ● Software installation and training on operating systems, Office packages, and various programs
-      </li>
-      <li><strong>Vamos para Cima (Internship)</strong> – Laravel Intern (April – July 2018)<br>
-        ● Assisted in developing an e-commerce platform using technologies such as Laravel, Git, PHP, Bootstrap, Vagrant, MySQL, Firebase, HTML5, JavaScript, jQuery, and CSS3
-      </li>
+      <li><strong>PC Manutenção (Freelance)</strong> – IT Technician (April 2015 – November 2018)<br>● Maintenance and replacement of motherboards and electronic components<br>● Software installation and training on operating systems, Office packages, and various programs</li>
+      <li><strong>Vamos para Cima (Internship)</strong> – Laravel Intern (April – July 2018)<br>● Assisted in developing an e-commerce platform using technologies such as Laravel, Git, PHP, Bootstrap, Vagrant, MySQL, Firebase, HTML5, JavaScript, jQuery, and CSS3</li>
       <li><strong>Datora Telecom</strong> (via Luby Software) – Full Stack Developer (2022 – Present)</li>
       <li><strong>Luby Software</strong> – Full Stack Developer (2021 – Present)</li>
       <li><strong>Super Teia</strong> – Full Stack Developer Jr (2021)</li>
@@ -149,7 +65,7 @@
     </ul>
   </section>
 
-  <section id="education">
+  <section id="education" class="fade-in">
     <h2>Education & Certifications</h2>
     <ul>
       <li>BSc in Information Systems – Dom Bosco University</li>
@@ -159,7 +75,7 @@
     </ul>
   </section>
 
-  <section id="languages">
+  <section id="languages" class="fade-in">
     <h2>Languages</h2>
     <ul>
       <li><strong>English:</strong> Intermediate (I can handle the interview in English)</li>
@@ -168,7 +84,7 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:joaoluizdeveloper@gmail.com">joaoluizdeveloper@gmail.com</a></p>
     <p>Phone: +55 (24) 99832-9477</p>
@@ -179,5 +95,8 @@
   <footer>
     <p>&copy; 2025 João Luiz. All rights reserved.</p>
   </footer>
+
+  <button id="backToTop">Back to Top</button>
+  <script src="script.js"></script>
 </body>
 </html>
