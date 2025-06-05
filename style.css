@@ -233,6 +233,7 @@ footer {
 }
 
 .modal-image {
+  margin-top: 150px;
   width: 700px;
   object-fit: contain;
   margin-bottom: 20px;
