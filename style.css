@@ -223,3 +223,36 @@ footer {
     display: flex;
     opacity: 1;
   }
+
+  .modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 700px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.modal-content {
+  width: 700px;
+  text-align: left;
+}
+
+.btn-more {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-more:hover {
+  background-color: darkred;
+}

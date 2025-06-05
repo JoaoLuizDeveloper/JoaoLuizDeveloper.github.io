@@ -157,15 +157,15 @@
     <!-- Modais -->
 
     <div id="modal-tech1" class="custom-modal">
-        <span onclick="closeModal('modal-tech1')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+        <span onclick="closeModal('modal-tech1')" class="modal-close-btn">&times;</span>
 
         <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">TechChallengerPhase1</h1> -->
 
         <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase1" target="_blank">
-            <img src="img/tech_challenger_phase.gif" alt="Preview TechChallengerPhase1" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;"/>
+            <img src="img/tech_challenger_phase.gif" alt="Preview TechChallengerPhase1" class="modal-image" />
         </a>
 
-        <div style="max-width: 800px; text-align: left;">
+        <div class="modal-content">
             <h2 style="color: white;">🛠️ Technologies Used</h2>
             <ul>
             <li><strong>Python</strong> – Primary language for data analysis</li>
@@ -194,15 +194,15 @@
     </div>
 
     <div id="modal-softplan" class="custom-modal">
-  <span onclick="closeModal('modal-softplan')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+  <span onclick="closeModal('modal-softplan')" class="modal-close-btn">&times;</span>
 
   <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">SoftPlanProject</h1> -->
 
   <a href="https://github.com/JoaoLuizDeveloper/SoftPlanProject" target="_blank">
-    <img src="img/soft_plan_project.gif" alt="Preview SoftPlanProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+    <img src="img/soft_plan_project.gif" alt="Preview SoftPlanProject" class="modal-image" />
   </a>
 
-  <div style="max-width: 800px; text-align: left;">
+  <div style="width: 700px; text-align: left;">
     <h2 style="color: white;">🛠️ Technologies Used</h2>
     <ul>
       <li><strong>ASP.NET Core 6</strong> – Framework for API development</li>
@@ -232,15 +232,15 @@
 </div>
 
     <div id="modal-questor" class="custom-modal">
-  <span onclick="closeModal('modal-questor')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+  <span onclick="closeModal('modal-questor')" class="modal-close-btn">&times;</span>
 
   <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">Questor Sistemas</h1> -->
 
   <a href="https://github.com/JoaoLuizDeveloper/BasicoGestor-Site" target="_blank">
-    <img src="img/questor.gif" alt="Preview Questor Sistemas" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+    <img src="img/questor.gif" alt="Preview Questor Sistemas" class="modal-image" />
   </a>
 
-    <div style="max-width: 800px; text-align: left;">
+    <div style="width: 700px; text-align: left;">
       <h2 style="color: white;">🛠️ Technologies Used</h2>
       <ul>
         <li><strong>ASP.NET Core</strong> – Backend framework for building Web APIs</li>
@@ -274,15 +274,15 @@
 </div>
 
     <div id="modal-parky" class="custom-modal">
-  <span onclick="closeModal('modal-parky')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+  <span onclick="closeModal('modal-parky')" class="modal-close-btn">&times;</span>
 
   <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">Parky</h1> -->
 
   <a href="https://github.com/JoaoLuizDeveloper/Parky" target="_blank">
-    <img src="img/parky.gif" alt="Preview Parky" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+    <img src="img/parky.gif" alt="Preview Parky" class="modal-image" />
   </a>
 
-  <div style="max-width: 800px; text-align: left;">
+  <div style="width: 700px; text-align: left;">
     <h2 style="color: white;">🛠️ Technologies Used</h2>
     <ul>
       <li><strong>ASP.NET Core Web API</strong> – Framework for API development</li>
@@ -313,15 +313,15 @@
 </div>
 
     <div id="modal-luby" class="custom-modal">
-  <span onclick="closeModal('modal-luby')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+  <span onclick="closeModal('modal-luby')" class="modal-close-btn">&times;</span>
 
   <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">LubyTechProject</h1> -->
 
   <a href="https://github.com/JoaoLuizDeveloper/LubyTechProject" target="_blank">
-    <img src="img/luby_tech_project.gif" alt="Preview LubyTechProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+    <img src="img/luby_tech_project.gif" alt="Preview LubyTechProject" class="modal-image" />
   </a>
 
-  <div style="max-width: 800px; text-align: left;">
+  <div style="width: 700px; text-align: left;">
         <h2 style="color: white;">🛠️ Technologies Used</h2>
         <ul>
         <li><strong>.NET Core 3.1 / .NET 5+</strong> – For building the API</li>
@@ -358,13 +358,13 @@
     background-color:rgba(0,0,0,0.95); color:white; justify-content:center; align-items:center; flex-direction:column; padding: 30px; overflow-y: auto;">
 
     <span onclick="document.getElementById('modal-docker').style.display='none'"
-        style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+        class="modal-close-btn">&times;</span>
 
     <a href="https://github.com/JoaoLuizDeveloper/DockerKubernetesPersonal" target="_blank">
-        <img src="img/docker_kubernetes.gif" alt="Preview DockerKubernetesPersonal" style="max-width: 100%; margin-bottom: 20px; border-radius: 10px;" />
+        <img src="img/docker_kubernetes.gif" alt="Preview DockerKubernetesPersonal" class="modal-image" />
     </a>
 
-    <div style="max-width: 800px; text-align: left;">
+    <div style="width: 700px; text-align: left;">
         <h2 style="color: white;">🛠️ Technologies Used</h2>
         <ul>
             <li><strong>ASP.NET Core MVC</strong> – Framework for developing the web application</li>
@@ -396,7 +396,6 @@
         </ul>
     </div>
 </div>
-
 
 </section>
 
@@ -433,8 +432,8 @@
 
   <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:joaoluizdeveloper@gmail.com">joaoluizdeveloper@gmail.com</a></p>
-    <p>Phone: +55 (24) 99832-9477</p>
+    <p>Email: <a href="mailto:joaoluizdeveloper@gmail.com">joaoluizdeveloper@gmail.com</a></p>    
+    <p>Phone: <a href="https://wa.me/5524998329477" target="_blank">+55 (24) 99832-9477 (WhatsApp)</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/joaoluizdeveloper" target="_blank">linkedin.com/in/joaoluizdeveloper</a></p>
     <p>GitHub: <a href="https://github.com/joaoluizdeveloper" target="_blank">github.com/joaoluizdeveloper</a></p>
   </section>

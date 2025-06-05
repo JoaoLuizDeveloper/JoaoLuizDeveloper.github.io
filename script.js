@@ -5,6 +5,18 @@ const backToTopBtn = document.getElementById("backToTop");
 const fadeSections = document.querySelectorAll('.fade-in');
 const sectionTitles = document.querySelectorAll('h2');
 
+document.addEventListener('DOMContentLoaded', () => {
+  const about = document.getElementById('about');
+  if (about && about.classList.contains('fade-in')) {
+    about.classList.add('visible');
+  }
+
+  const aboutTitle = about?.querySelector('h2');
+  if (aboutTitle) {
+    aboutTitle.classList.add('visible');
+  }
+});
+
 // Toggle back to top button + trigger animations
 window.addEventListener('scroll', () => {
   const scrollY = document.documentElement.scrollTop;
