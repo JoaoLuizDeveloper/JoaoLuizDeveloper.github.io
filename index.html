@@ -118,18 +118,20 @@
     </div>
 
     <div class="project-card">
-        <h3>CriptoControl</h3>
-        <p>Personal project focused on tracking and analyzing cryptocurrency investments, with features to monitor performance, gains, and balance over time.</p>
+        <h3>Questor Sistemas with Admin LTE</h3>
+        <p>The Questor System project demonstrates the initiative to build a complete business management system by integrating both frontend and backend.</p>
         <div class="tags">
-            <span>.NET Core</span>
-            <span>C#</span>
-            <span>Blazor</span>
-            <span>ASP.NET MVC</span>
-            <span>SQL Server</span>
+              <span>ASP.NET Core</span>
+              <span>C#</span>
+              <span>Entity Framework Core</span>
+              <span>SQL Server</span>
+              <span>HTML, CSS, JavaScript</span>
+              <span>AdminLTE Template</span>
+              <span>jQuery</span>
         </div>
         <div style="text-align: center; margin-top: 10px;">
             <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
-                onclick="showModal('modal-cripto')">More</button>
+                onclick="showModal('modal-questor')">More</button>
         </div>
     </div>
 
@@ -160,7 +162,7 @@
         <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">TechChallengerPhase1</h1> -->
 
         <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase1" target="_blank">
-            <img src="img/tech_challenger_phase.png" alt="Preview TechChallengerPhase1" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;"/>
+            <img src="img/tech_challenger_phase.gif" alt="Preview TechChallengerPhase1" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;"/>
         </a>
 
         <div style="max-width: 800px; text-align: left;">
@@ -197,7 +199,7 @@
   <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">SoftPlanProject</h1> -->
 
   <a href="https://github.com/JoaoLuizDeveloper/SoftPlanProject" target="_blank">
-    <img src="img/soft_plan_project.png" alt="Preview SoftPlanProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+    <img src="img/soft_plan_project.gif" alt="Preview SoftPlanProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
   </a>
 
   <div style="max-width: 800px; text-align: left;">
@@ -229,41 +231,46 @@
   </div>
 </div>
 
-    <div id="modal-cripto" class="custom-modal">
-  <span onclick="closeModal('modal-cripto')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
+    <div id="modal-questor" class="custom-modal">
+  <span onclick="closeModal('modal-questor')" style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
 
-  <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">CriptoControl</h1> -->
+  <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">Questor Sistemas</h1> -->
 
-  <a href="https://github.com/JoaoLuizDeveloper/CriptoControl" target="_blank">
-    <img src="img/cripto_control.png" alt="Preview CriptoControl" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+  <a href="https://github.com/JoaoLuizDeveloper/BasicoGestor-Site" target="_blank">
+    <img src="img/questor.gif" alt="Preview Questor Sistemas" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
   </a>
 
-  <div style="max-width: 800px; text-align: left;">
-    <h2 style="color: white;">🛠️ Technologies Used</h2>
-    <ul>
-      <li><strong>.NET Core</strong> – Framework for application development</li>
-      <li><strong>C#</strong> – Programming language used</li>
-      <li><strong>Blazor or ASP.NET MVC</strong> – To be defined (TBD) for UI layer</li>
-      <li><strong>SQL Server</strong> – Relational database for data persistence</li>
-    </ul>
+    <div style="max-width: 800px; text-align: left;">
+      <h2 style="color: white;">🛠️ Technologies Used</h2>
+      <ul>
+        <li><strong>ASP.NET Core</strong> – Backend framework for building Web APIs</li>
+        <li><strong>C#</strong> – Primary programming language used in the backend</li>
+        <li><strong>Entity Framework Core</strong> – ORM for handling database access</li>
+        <li><strong>SQL Server</strong> – Relational database for data storage</li>
+        <li><strong>HTML, CSS, JavaScript</strong> – Frontend technologies using AdminLTE</li>
+        <li><strong>AdminLTE Template</strong> – Responsive UI template for admin dashboard</li>
+        <li><strong>jQuery</strong> – Used for AJAX and dynamic interactions</li>
+      </ul>
 
-    <h2 style="color: white;">🏛️ Architecture</h2>
-    <ul>
-      <li><strong>Controllers:</strong> Handle HTTP requests and coordinate business logic</li>
-      <li><strong>Extensions:</strong> Provide helper extension methods</li>
-      <li><strong>Properties:</strong> Stores config and project metadata</li>
-      <li>Uses <code>appsettings.json</code> and <code>appsettings.Development.json</code> for environment configs</li>
-    </ul>
+      <h2 style="color: white;">🏛️ Architecture</h2>
+      <ul>
+        <li><strong>WebApi:</strong> ASP.NET Core API project for business logic and data services</li>
+        <li><strong>QuestorSistemasAdmin:</strong> Admin dashboard built with AdminLTE</li>
+        <li><strong>QuestorSistemasSite:</strong> Public-facing website or client interface</li>
+        <li><strong>Controllers:</strong> Manage HTTP requests and route to services</li>
+        <li><strong>Repositories:</strong> Abstraction layer for data access with EF Core</li>
+        <li><strong>Models:</strong> Represent entities and data transfer objects</li>
+      </ul>
 
-    <h2 style="color: white;">⭐ Main Features</h2>
-    <ul>
-      <li>Crypto portfolio tracking and total balance calculation</li>
-      <li>Real-time price fetching via public APIs</li>
-      <li>Performance charts over time</li>
-      <li>Historical price tracking</li>
-      <li>Multi-currency support</li>
-    </ul>
-  </div>
+      <h2 style="color: white;">⭐ Main Features</h2>
+      <ul>
+        <li>Admin dashboard with ready-to-use UI template</li>
+        <li>Backend API structure ready for extension</li>
+        <li>Entity Framework Core integration for database operations</li>
+        <li>Modern, responsive UI with AdminLTE</li>
+        <li>Separation of concerns: API, Admin, and Public site</li>
+      </ul>
+    </div>
 </div>
 
     <div id="modal-parky" class="custom-modal">
@@ -272,7 +279,7 @@
   <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">Parky</h1> -->
 
   <a href="https://github.com/JoaoLuizDeveloper/Parky" target="_blank">
-    <img src="img/parky.png" alt="Preview Parky" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+    <img src="img/parky.gif" alt="Preview Parky" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
   </a>
 
   <div style="max-width: 800px; text-align: left;">
@@ -311,7 +318,7 @@
   <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">LubyTechProject</h1> -->
 
   <a href="https://github.com/JoaoLuizDeveloper/LubyTechProject" target="_blank">
-    <img src="img/luby_tech_project.png" alt="Preview LubyTechProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
+    <img src="img/luby_tech_project.gif" alt="Preview LubyTechProject" style="max-width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 10px;" />
   </a>
 
   <div style="max-width: 800px; text-align: left;">
@@ -354,7 +361,7 @@
         style="position:absolute; top:20px; right:30px; font-size:40px; cursor:pointer;">&times;</span>
 
     <a href="https://github.com/JoaoLuizDeveloper/DockerKubernetesPersonal" target="_blank">
-        <img src="img/docker_kubernetes.png" alt="Preview DockerKubernetesPersonal" style="max-width: 100%; margin-bottom: 20px; border-radius: 10px;" />
+        <img src="img/docker_kubernetes.gif" alt="Preview DockerKubernetesPersonal" style="max-width: 100%; margin-bottom: 20px; border-radius: 10px;" />
     </a>
 
     <div style="max-width: 800px; text-align: left;">
