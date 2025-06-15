@@ -151,6 +151,55 @@
                 onclick="showModal('modal-parky')">More</button>
         </div>
     </div>
+
+    <div class="project-card">
+        <h3>FinancialProject</h3>
+        <p>Project focused on Clean Architecture and Domain-Driven Design (DDD), emphasizing business rules and OOP best practices such as inheritance, abstraction, and polymorphism.</p>
+        <div class="tags">
+            <span>.NET 6</span>
+            <span>DDD</span>
+            <span>Domain Services</span>
+            <span>Polymorphism</span>
+            <span>Inheritance</span>
+            <span>Abstraction</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-financial')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>CQRS Architecture</h3>
+        <p>Project demonstrating the use of the CQRS (Command Query Responsibility Segregation) pattern to separate read and write responsibilities, improving maintainability and scalability.</p>
+        <div class="tags">
+            <span>.NET 6</span>
+            <span>CQRS</span>
+            <span>MediatR</span>
+            <span>Clean Architecture</span>
+            <span>Command/Query Separation</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-cqrs')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>Design Patterns Showcase</h3>
+        <p>Project demonstrating key Object-Oriented Design Patterns such as Singleton, Factory, Strategy, Observer, Decorator, and Builder — all implemented in C# with real use cases.</p>
+        <div class="tags">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>Design Patterns</span>
+            <span>OOP</span>
+            <span>Software Architecture</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-patterns')">More</button>
+        </div>
+    </div>
 </div>
   
     
@@ -393,6 +442,115 @@
             <li>Integration with SQL Server database</li>
             <li>Application containerization using Docker</li>
             <li>Deployment and management in a Kubernetes cluster</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-financial" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%;
+    background-color:rgba(0,0,0,0.95); color:white; justify-content:center; align-items:center; flex-direction:column; padding: 30px; overflow-y: auto;">
+    
+    <span onclick="document.getElementById('modal-financial').style.display='none'" class="modal-close-btn">&times;</span>
+
+    <a href="https://github.com/JoaoLuizDeveloper/FinancialProject" target="_blank">
+        <img src="img/polimorfismAbstractions.gif" alt="Preview FinancialProject" class="modal-image" />
+    </a>
+
+    <div style="width: 700px; text-align: left;">
+        <h2 style="color: white;">🛠️ Technologies Used</h2>
+        <ul>
+            <li><strong>.NET 6</strong> – Main platform used in the project</li>
+            <li><strong>Entity Framework Core</strong> – ORM for data access</li>
+            <li><strong>Clean Architecture</strong> – Clear separation between application layers</li>
+        </ul>
+
+        <h2 style="color: white;">🏛️ Architecture & Patterns</h2>
+        <ul>
+            <li><strong>Domain-Driven Design (DDD):</strong> Organizes the system around business rules</li>
+            <li><strong>Domain Services:</strong> Business logic that doesn’t belong to any specific entity</li>
+            <li><strong>Abstract Classes:</strong> Serve as base templates and cannot be instantiated</li>
+            <li><strong>Abstract and Concrete Methods:</strong> Allow flexibility and reusability</li>
+            <li><strong>Inheritance and Polymorphism:</strong> Enable shared behavior and generic handling</li>
+        </ul>
+
+        <h2 style="color: white;">⭐ Key Features</h2>
+        <ul>
+            <li>Modular and decoupled system organization</li>
+            <li>Strong focus on business rules and code reuse</li>
+            <li>Applies SOLID principles</li>
+            <li>Easy to maintain and test</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-cqrs" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%;
+    background-color:rgba(0,0,0,0.95); color:white; justify-content:center; align-items:center; flex-direction:column; padding: 30px; overflow-y: auto;">
+    
+    <span onclick="document.getElementById('modal-cqrs').style.display='none'" class="modal-close-btn">&times;</span>
+
+    <a href="https://github.com/JoaoLuizDeveloper/ArquitecturePatternAPI" target="_blank">
+        <img src="img/arquitecturePatternCQRS.gif" alt="Preview CQRSProject" class="modal-image" />
+    </a>
+
+    <div style="width: 700px; text-align: left;">
+        <h2 style="color: white;">🛠️ Technologies Used</h2>
+        <ul>
+            <li><strong>.NET 6</strong> – Core framework used</li>
+            <li><strong>MediatR</strong> – Simplifies the implementation of CQRS with in-process messaging</li>
+            <li><strong>Entity Framework Core</strong> – ORM for database operations</li>
+            <li><strong>Clean Architecture</strong> – Promotes separation of concerns</li>
+        </ul>
+
+        <h2 style="color: white;">🏛️ Architecture & Pattern</h2>
+        <ul>
+            <li><strong>CQRS (Command Query Responsibility Segregation):</strong> Separates read and write operations into different models</li>
+            <li><strong>Commands:</strong> Handle write/update operations with validations</li>
+            <li><strong>Queries:</strong> Handle read operations optimized for performance</li>
+            <li><strong>Decoupling:</strong> Improves code clarity and scalability</li>
+        </ul>
+
+        <h2 style="color: white;">⭐ Key Benefits</h2>
+        <ul>
+            <li>Independent scaling of read and write operations</li>
+            <li>Improved maintainability in complex systems</li>
+            <li>Better performance tuning for queries vs. commands</li>
+            <li>Clearer separation of concerns in the application</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal-patterns" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%;
+    background-color:rgba(0,0,0,0.95); color:white; justify-content:center; align-items:center; flex-direction:column; padding: 30px; overflow-y: auto;">
+    
+    <span onclick="document.getElementById('modal-patterns').style.display='none'" class="modal-close-btn">&times;</span>
+
+    <a href="https://github.com/JoaoLuizDeveloper/DesignerPatternAPI" target="_blank">
+        <img src="img/designerPattern.gif" alt="Preview Design Patterns" class="modal-image" />
+    </a>
+
+    <div style="width: 700px; text-align: left;">
+        <h2 style="color: white;">🛠️ Technologies Used</h2>
+        <ul>
+            <li><strong>.NET 6</strong> – Main platform</li>
+            <li><strong>C#</strong> – Language used to implement all patterns</li>
+        </ul>
+
+        <h2 style="color: white;">🎯 Implemented Design Patterns</h2>
+        <ul>
+            <li><strong>Singleton:</strong> Ensures a class has only one instance throughout the application</li>
+            <li><strong>Factory / Abstract Factory:</strong> 
+                Factory creates objects based on logic; Abstract Factory creates families of related objects</li>
+            <li><strong>Strategy:</strong> Allows runtime switching of algorithms or behaviors</li>
+            <li><strong>Observer:</strong> Notifies subscribed objects when a state changes</li>
+            <li><strong>Decorator:</strong> Adds behavior to objects without altering their structure</li>
+            <li><strong>Builder:</strong> Constructs complex objects step by step</li>
+        </ul>
+
+        <h2 style="color: white;">⭐ Key Highlights</h2>
+        <ul>
+            <li>Clean and reusable implementations</li>
+            <li>Focus on maintainability and scalability</li>
+            <li>Examples aligned with real-world scenarios</li>
+            <li>Helpful for interviews, studies, and architecture references</li>
         </ul>
     </div>
 </div>
