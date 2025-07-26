@@ -53,6 +53,8 @@
       <li><strong>Architectural Pattern CQRS</strong> <a href="https://youtu.be/dkq6jQvN9JE" target="_blank">https://youtu.be/dkq6jQvN9JE</a></li>
       <li><strong>FinancialProject DDD & OOP Principles</strong> <a href="https://youtu.be/9X_GpdSLcLQ" target="_blank">https://youtu.be/9X_GpdSLcLQ</a></li>
       <li><strong>Rabbit MQ Project</strong> <a href="https://youtu.be/-C9XG8B7zOk" target="_blank">https://youtu.be/-C9XG8B7zOk</a></li>
+      <li><strong>Data Analysis with Python and Machine Learning (PT)</strong> <a href="https://www.youtube.com/watch?v=1vuGHRynw48&t=5s" target="_blank">https://www.youtube.com/watch?v=1vuGHRynw48&t=5s</a></li>
+      <li><strong>Genetic algorithm (PT)</strong> <a href="https://www.youtube.com/watch?v=Hc70J2slX2s&t=32s" target="_blank">https://www.youtube.com/watch?v=Hc70J2slX2s&t=32s</a></li>
     </ul>
   </section>
 
@@ -61,8 +63,8 @@
 
   <div class="project-grid">
     <div class="project-card">
-        <h3>TechChallengerPhase1</h3>
-        <p>Project developed for Phase 1 of a technical challenge, demonstrating problem-solving skills and practical application of software development knowledge.</p>
+        <h3>Data Analysis with Python and Machine Learning</h3>
+        <p>Machine learning project focused on data analysis, using Python to extract insights, identify patterns, and support data-driven decision-making.</p>
         <div class="tags">
             <span>Python</span>
             <span>Pandas</span>
@@ -74,6 +76,23 @@
         <div style="text-align: center; margin-top: 10px;">
             <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
                 onclick="showModal('modal-tech1')">More</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>Genetic Algorithm (GA)</h3>
+        <p>This project aims to apply **Artificial Intelligence** techniques, specifically a **Genetic Algorithm (GA)**, to solve the **student grouping (class assignment)** problem, maximizing affinities between students.</p>
+        <div class="tags">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+            <span>Scikit-learn</span>
+            <span>DEAP (Distributed Evolutionary Algorithms in Python)</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-tech2')">More</button>
         </div>
     </div>
 
@@ -249,6 +268,44 @@
             <li>Formatting monetary values to Brazilian standard</li>
             <li>Sorting data to identify most and least expensive plans</li>
             <li>Graphical visualizations to support data interpretation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-tech2" class="custom-modal">
+        <span onclick="closeModal('modal-tech2')" class="modal-close-btn">&times;</span>
+
+        <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">TechChallengerPhase1</h1> -->
+
+        <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase1" target="_blank">
+            <img src="img/tech_2.gif" alt="Preview TechChallengerPhase2" class="modal-image" />
+        </a>
+
+        <div class="modal-content">
+            <h2 style="color: white;">🛠️ Technologies Used</h2>
+            <ul>
+            <li><strong>Python</strong> – Primary language for data analysis</li>
+            <li><strong>Pandas</strong> – Data manipulation and analysis</li>
+            <li><strong>NumPy</strong> – Efficient numerical operations</li>
+            <li><strong>Matplotlib and Seaborn</strong> – Data visualization</li>
+            <li><strong>Scikit-learn</strong> – Machine learning models and utilities</li>
+            <li><strong>DEAP (Distributed Evolutionary Algorithms in Python)</strong> – Genetic algorithm framework</li>            
+            </ul>
+
+            <h2 style="color: white;">🏛️ Architecture</h2>
+            <ul>
+            <li><strong>enturmacao_alunos_ga.ipynb:</strong> Genetic Algorithm implementation for optimized student grouping with data simulation and result analysis.</li>
+            <li><strong>alunos.csv:</strong> Simulated dataset representing students and their attributes, used as input for the grouping algorithm.</li>
+            <li><strong>enturmacao_alunos_analise.ipynb:</strong> Focused on analyzing the results of the student grouping algorithm, including statistical evaluation and visual exploration of the generated classes.</li>
+            </ul>
+
+            <h2 style="color: white;">⭐ Main Features</h2>
+            <ul>
+              <li>✅ Uses a Genetic Algorithm to optimize the distribution of students into balanced groups based on name, origin, gender, and age.</li>
+              <li>📊 Simulates multiple combinations and evolves toward the best solution using the <strong>pygad</strong> library.</li>
+              <li>📈 Performs detailed data preparation and group analysis to define constraints like max group size and attribute balance.</li>
+              <li>📌 Includes custom penalty and fitness functions to guide the genetic evolution toward feasible and efficient class configurations.</li>
+              <li>📉 Visualizes group allocation metrics and validates statistical fairness across generated student groups.</li>
             </ul>
         </div>
     </div>
