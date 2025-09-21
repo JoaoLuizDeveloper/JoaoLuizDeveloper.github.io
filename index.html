@@ -109,6 +109,27 @@
     </div>
 
     <div class="project-card">
+        <h3>DistilBERT QA Fine-Tuning</h3>
+        <p>
+            This project fine-tunes a <strong>DistilBERT</strong> model for
+            <strong>Question Answering (extractive QA)</strong> using a SQuAD-style dataset,
+            with careful preprocessing, training/evaluation loops, and robust metrics tracking.
+        </p>
+        <div class="tags">
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>Transformers (Hugging Face)</span>
+            <span>Datasets</span>
+            <span>Tokenizers</span>
+            <span>Evaluation: F1 / EM</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-finetune')">More</button>
+        </div>
+  </div>
+
+    <div class="project-card">
         <h3>LubyTechProject</h3>
         <p>RESTful API developed as part of a technical challenge from Luby to control developers' time entries, focusing on clean architecture and best practices.</p>
         <div class="tags">
@@ -321,6 +342,46 @@
             </ul>
         </div>
     </div>
+
+      <div id="modal-finetune" class="custom-modal">
+      <span onclick="closeModal('modal-finetune')" class="modal-close-btn">&times;</span>
+
+      <!-- Ajuste o link/preview conforme seu repositório e mídia -->
+      <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase3" target="_blank">
+          <img src="img/phase3.gif" alt="Preview DistilBERT QA Fine-Tuning" class="modal-image" />
+      </a>
+
+      <div class="modal-content">
+          <h2 style="color: white;">🛠️ Technologies Used</h2>
+          <ul>
+              <li><strong>Python</strong> – Core language for data prep, training, and evaluation</li>
+              <li><strong>PyTorch</strong> – Tensors, autograd, and GPU-accelerated training</li>
+              <li><strong>Hugging Face Transformers</strong> – DistilBERT model, Trainer, TrainingArguments</li>
+              <li><strong>Hugging Face Datasets</strong> – SQuAD-style loading, mapping, and caching</li>
+              <li><strong>Tokenizers</strong> – Fast WordPiece tokenization, offset mapping</li>
+              <li><strong>Matplotlib</strong> – Optional training curves and metric plots</li>
+          </ul>
+
+          <h2 style="color: white;">🏛️ Architecture</h2>
+          <ul>
+              <li><strong>fine_tuning_final.py:</strong> End-to-end script (load → preprocess → train → evaluate → save checkpoints).</li>
+              <li><strong>produtos_qa.csv / squad.json:</strong> QA pairs in SQuAD format (context, question, answer text & spans).</li>
+              <li><strong>preprocess:</strong> Tokenization with stride, overflow handling, and start/end position alignment.</li>
+              <li><strong>training:</strong> <code>Trainer</code> + <code>TrainingArguments</code> (batch size, lr scheduler, fp16 if available).</li>
+              <li><strong>evaluation:</strong> Exact Match (EM) & F1, post-processing of start/end logits into text spans.</li>
+              <li><strong>artifacts:</strong> Saved tokenizer, model, and best checkpoint for inference.</li>
+          </ul>
+
+          <h2 style="color: white;">⭐ Main Features</h2>
+          <ul>
+              <li>✅ <strong>SQuAD-style pipeline</strong>: robust preprocessing with overflow and stride for long contexts.</li>
+              <li>🚀 <strong>Efficient training</strong>: gradient accumulation, learning-rate scheduling, checkpointing.</li>
+              <li>🧪 <strong>Solid evaluation</strong>: EM/F1 with post-processing to reconstruct predicted answers.</li>
+              <li>🔎 <strong>Error analysis</strong>: optional inspection of low-score samples and confusion patterns.</li>
+              <li>📦 <strong>Reproducible</strong>: seed setting, deterministic dataloaders, and saved artifacts for reuse.</li>
+          </ul>
+      </div>
+  </div>
 
     <div id="modal-softplan" class="custom-modal">
   <span onclick="closeModal('modal-softplan')" class="modal-close-btn">&times;</span>
