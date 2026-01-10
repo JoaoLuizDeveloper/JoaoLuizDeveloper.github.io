@@ -82,6 +82,8 @@
       <li><strong>Rabbit MQ Project</strong> <a href="https://youtu.be/-C9XG8B7zOk" target="_blank">https://youtu.be/-C9XG8B7zOk</a></li>
       <li><strong>Data Analysis with Python and Machine Learning (PT)</strong> <a href="https://www.youtube.com/watch?v=1vuGHRynw48&t=5s" target="_blank">https://www.youtube.com/watch?v=1vuGHRynw48&t=5s</a></li>
       <li><strong>Genetic algorithm (PT)</strong> <a href="https://www.youtube.com/watch?v=Hc70J2slX2s&t=32s" target="_blank">https://www.youtube.com/watch?v=Hc70J2slX2s&t=32s</a></li>
+      <li><strong>Predictive Models, Dashboarding, and Time Series (PT)</strong> <a href="https://www.youtube.com/watch?v=Hym8OTsLfIs&t=29s" target="_blank">https://www.youtube.com/watch?v=Hym8OTsLfIs&t=29s</a></li>
+      <li><strong>Smart Video Analytics: Facial Recognition & Emotion Detection System (PT)</strong> <a href="https://www.youtube.com/watch?v=7B3uK4HVerM" target="_blank">https://www.youtube.com/watch?v=7B3uK4HVerM</a></li>
     </ul>
   </section>
 
@@ -122,6 +124,28 @@
                 onclick="showModal('modal-tech2')">More</button>
         </div>
     </div>
+
+    <div class="project-card">
+        <h3>Smart Video Analytics: Facial Recognition & Emotion Detection System</h3>
+        <p>An AI-powered video analytics solution that integrates Computer Vision and Deep Learning to automate facial recognition, emotion detection, and human activity classification within video streams.</p>
+        <div class="tags">
+            <span>Python</span> 
+            <span>OpenCV</span>
+            <span>TensorFlow</span> 
+            <span>PyTorch</span> 
+            <span>MediaPipe</span> 
+            <span>Deep Learning</span> 
+            <span>Computer Vision</span> 
+            <span>Sentiment Analysis</span> 
+            <span>Facial Recognition</span>
+            <span>Action Recognition</span>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="showModal('modal-tech4')">More</button>
+        </div>
+    </div>
+
 
     <div class="project-card">
         <h3>DistilBERT QA Fine-Tuning</h3>
@@ -325,7 +349,7 @@
 
         <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">TechChallengerPhase1</h1> -->
 
-        <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase1" target="_blank">
+        <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase2" target="_blank">
             <img src="img/tech_2.gif" alt="Preview TechChallengerPhase2" class="modal-image" />
         </a>
 
@@ -354,6 +378,50 @@
               <li>📈 Performs detailed data preparation and group analysis to define constraints like max group size and attribute balance.</li>
               <li>📌 Includes custom penalty and fitness functions to guide the genetic evolution toward feasible and efficient class configurations.</li>
               <li>📉 Visualizes group allocation metrics and validates statistical fairness across generated student groups.</li>
+            </ul>
+        </div>
+    </div>
+
+     <div id="modal-tech4" class="custom-modal">
+        <span onclick="closeModal('modal-tech4')" class="modal-close-btn">&times;</span>
+
+        <!-- <h1 style="color: lime; font-size: 28px; font-weight: bold; margin-bottom: 15px;">TechChallengerPhase1</h1> -->
+
+        <a href="https://github.com/JoaoLuizDeveloper/TechChallengerPhase4" target="_blank">
+            <img src="img/phase4.gif" alt="Preview TechChallengerPhase4" class="modal-image" />
+        </a>
+
+        <div class="modal-content">
+            <h2 style="color: white;">🛠️ Technologies Used</h2>
+            <ul>
+            <li><strong>Python</strong> – Primary language used for implementing AI models and video processing logic.</li>
+            <li><strong>OpenCV</strong> – Essential library for real-time computer vision, frame extraction, and image manipulation.</li>
+            <li><strong>TensorFlow / Keras</strong> – Deep learning frameworks used to build and deploy the neural networks for sentiment and task classification.</li>
+            <li><strong>MediaPipe</strong> – Used for high-fidelity body tracking and facial landmark detection to support gesture and emotion analysis.</li>
+            <li><strong>NumPy</strong> – Fundamental package for scientific computing and handling the multi-dimensional arrays representing video frames.</li>
+            <li><strong>Pandas</strong> – Utilized for structuring and exporting the results of the video analysis into organized data formats.</li>
+            <li><strong>Matplotlib / Seaborn</strong> – Libraries used to generate visual reports and distribution charts of the detected sentiments.</li>          
+            </ul>
+
+            <h2 style="color: white;">🏛️ Architecture</h2>
+            <ul>
+            <li><strong>main.py:</strong> The entry point of the application that orchestrates the video capture, frame processing, and integration of the AI models.</li>
+              <li><strong>video_processor.py:</strong> Responsible for decoding video streams, extracting frames using OpenCV, and preparing data for the inference pipeline.</li>
+              <li><strong>emotion_detector.ipynb:</strong> Notebook containing the training and validation logic for the Convolutional Neural Network (CNN) used to classify facial expressions.</li>
+              <li><strong>action_recognition_model.h5:</strong> Pre-trained deep learning model file used to identify and classify specific tasks or activities performed in the video.</li>
+              <li><strong>face_recognition_handler.py:</strong> Script dedicated to identifying unique individuals by comparing facial embeddings against a known database.</li>
+              <li><strong>analysis_results.csv:</strong> Output file generated by the system, logging timestamps, detected emotions, and activities for further reporting.</li>
+              <li><strong>requirements.txt:</strong> List of all necessary dependencies, including TensorFlow, OpenCV, and MediaPipe, required to replicate the environment.</li>
+            </ul>
+
+            <h2 style="color: white;">⭐ Main Features</h2>
+            <ul>
+              <li>✅ Real-Time Facial Recognition: Identifies and tracks specific individuals within video streams using high-accuracy facial embedding comparisons.</li>
+              <li>📊 Multimodal Sentiment Analysis: Detects and classifies emotional states (such as joy, sadness, or anger) by analyzing facial expressions and micro-movements.</li>
+              <li>📈 Activity & Task Classification: Uses Deep Learning models to recognize specific human actions and log the duration and frequency of tasks performed.</li>
+              <li>📌 Frame-by-Frame Processing: Implements an efficient pipeline using OpenCV and MediaPipe to extract landmarks and process visual data with low latency.</li>
+              <li>📉 Automated Data Logging: Generates structured reports and datasets (CSV/JSON) containing the chronological history of detected emotions and events for post-analysis.</li>
+              <li>🎥 Visual Feedback Overlay: Renders real-time bounding boxes and labels directly onto the video output to visualize the model's predictions and confidence levels.</li>
             </ul>
         </div>
     </div>
@@ -771,7 +839,7 @@
           — A foundational masterpiece that teaches how to align code with business reality, turning complex domains into clear, maintainable, and meaningful software models.
       </li>
       <li  style="margin-bottom: 14px;">
-        <b>Software Architecture: The Hard Parts <span  style="text-decoration: underline;">(Currently Reading)</span>   by <span class="author">Neal Ford, Mark Richards, Pramod J. Sadalage, Zhamak Dehghani</span></b>
+        <b>Software Architecture: The Hard Parts <span  style="text-decoration: underline;"></span>   by <span class="author">Neal Ford, Mark Richards, Pramod J. Sadalage, Zhamak Dehghani</span></b>
           — A deep, practical exploration of the toughest architectural decisions—showing how to balance trade-offs in scalability, coupling, and data across complex distributed systems.
       </li>
     </ul>
